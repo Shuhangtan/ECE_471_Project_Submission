@@ -1,0 +1,9 @@
+The code in this notebook is based on the multi-processor version of duck_hunt_main.py
+The rungame() function is in the last cell of the notebook
+
+Colab running instruction:
+
+1. Please Do not connect to GPU at runtime. Please go to the Runtime->Change runtime type and select the Hardware accelerator to be None. 
+	(Connecting to GPU will cause a known bug with CUDA, which is associated with multi-processing)
+
+2. Currently, every time we call the rungame function only 1 level of the game will be run. In the notebook, it loop through several levels in a list called levels. Currently this list of levels is genrated by np.random.rand() and contains 60 levels.   
